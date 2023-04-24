@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingHorizontal="@dimen/_12sdp"
+    tools:context=".fragment.DownloadsFragment">
+
+    <com.example.wallpaperwiz.customfont.CustomTextViewExtraBold
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/downloads"
+        style="@style/black_18"
+        android:letterSpacing="0.04"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:includeFontPadding="false"/>
+
+    <com.example.wallpaperwiz.customfont.CustomTextViewMedium
+        android:id="@+id/tv_wallpaperDownloaded"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0 Wallpaper dwonloaded"
+        android:layout_marginVertical="@dimen/_8sdp"
+        style="@style/gray_16"
+        android:includeFontPadding="false"/>
+
+
+</LinearLayout>

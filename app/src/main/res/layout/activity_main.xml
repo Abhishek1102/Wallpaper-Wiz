@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/frame_dashboard"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_above="@id/lv_bottomNav"
+        android:layout_height="match_parent"/>
+
+    <RelativeLayout
+        android:id="@+id/lv_bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bottom_nav"
+        android:paddingVertical="@dimen/_5sdp"
+        android:paddingHorizontal="@dimen/_5sdp"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:id="@+id/iv_home"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="@dimen/_65sdp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/home" />
+
+        <ImageView
+            android:id="@+id/iv_downloads"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/_65sdp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/downloads"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

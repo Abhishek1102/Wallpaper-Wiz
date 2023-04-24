@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Wallpaper Wiz</string>
+    <string name="best_of_the_month">Best of the Month</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="downloads">Downloads</string>
+</resources>
