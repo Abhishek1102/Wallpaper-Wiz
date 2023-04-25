@@ -1,6 +1,7 @@
 package com.example.wallpaperwiz.adapter
 
 import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -8,6 +9,7 @@ import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.wallpaperwiz.R
+import com.example.wallpaperwiz.activity.FinalWallpaperActivity
 import com.example.wallpaperwiz.model.BomModel
 
 class BomAdapter(val context: Context,val list: ArrayList<BomModel>):RecyclerView.Adapter<BomAdapter.ViewHolder>() {
@@ -20,6 +22,11 @@ class BomAdapter(val context: Context,val list: ArrayList<BomModel>):RecyclerVie
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         Glide.with(context).load(list[position].link).into(holder.iv_bom)
+        holder.itemView.setOnClickListener {
+            val i = Intent(context,FinalWallpaperActivity::class.java)
+            i.putExtra("link",list[position].link)
+            context.startActivity(i)
+        }
     }
 
     override fun getItemCount(): Int {

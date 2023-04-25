@@ -1,34 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".fragment.DownloadsFragment">
+    tools:context=".activity.CategoriesActivity">
 
     <com.example.wallpaperwiz.customfont.CustomTextViewExtraBold
+        android:id="@+id/tv_categoriesName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/downloads"
         style="@style/black_18"
+        android:layout_marginHorizontal="@dimen/_12sdp"
         android:letterSpacing="0.04"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:includeFontPadding="false"/>
+
+    <com.example.wallpaperwiz.customfont.CustomTextViewBold
+        android:id="@+id/tv_wallpaperAvailable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="50 wallpaper available"
+        style="@style/gray_16"
         android:layout_marginHorizontal="@dimen/_12sdp"
         android:layout_marginTop="@dimen/_12sdp"
         android:includeFontPadding="false"/>
 
-    <com.example.wallpaperwiz.customfont.CustomTextViewMedium
-        android:id="@+id/tv_wallpaperDownloaded"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="0 Wallpaper dwonloaded"
-        android:layout_marginVertical="@dimen/_8sdp"
-        android:layout_marginHorizontal="@dimen/_12sdp"
-        style="@style/gray_16"
-        android:includeFontPadding="false"/>
-
-
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_downloads"
+        android:id="@+id/rv_wallpaper"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:scrollbars="none"

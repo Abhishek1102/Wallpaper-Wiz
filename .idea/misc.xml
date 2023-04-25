@@ -7,6 +7,8 @@
         <entry key="..\:/MyKotlinProjects/WallpaperWiz/app/src/main/res/drawable/bottom_nav.xml" value="0.1435" />
         <entry key="..\:/MyKotlinProjects/WallpaperWiz/app/src/main/res/drawable/divider_shape.xml" value="0.1435" />
         <entry key="..\:/MyKotlinProjects/WallpaperWiz/app/src/main/res/drawable/rounded_corner.xml" value="0.1435" />
+        <entry key="..\:/MyKotlinProjects/WallpaperWiz/app/src/main/res/layout/activity_categories.xml" value="0.25416666666666665" />
+        <entry key="..\:/MyKotlinProjects/WallpaperWiz/app/src/main/res/layout/activity_final_wallpaper.xml" value="0.264" />
         <entry key="..\:/MyKotlinProjects/WallpaperWiz/app/src/main/res/layout/activity_main.xml" value="0.24010416666666667" />
         <entry key="..\:/MyKotlinProjects/WallpaperWiz/app/src/main/res/layout/activity_main2.xml" value="0.25416666666666665" />
         <entry key="..\:/MyKotlinProjects/WallpaperWiz/app/src/main/res/layout/activity_splash.xml" value="0.24010416666666667" />
@@ -15,7 +17,9 @@
         <entry key="..\:/MyKotlinProjects/WallpaperWiz/app/src/main/res/layout/fragment_downloads.xml" value="0.25416666666666665" />
         <entry key="..\:/MyKotlinProjects/WallpaperWiz/app/src/main/res/layout/row_bom.xml" value="0.25416666666666665" />
         <entry key="..\:/MyKotlinProjects/WallpaperWiz/app/src/main/res/layout/row_categories.xml" value="0.25416666666666665" />
+        <entry key="..\:/MyKotlinProjects/WallpaperWiz/app/src/main/res/layout/row_downloads.xml" value="0.253125" />
         <entry key="..\:/MyKotlinProjects/WallpaperWiz/app/src/main/res/layout/row_tct.xml" value="0.253125" />
+        <entry key="..\:/MyKotlinProjects/WallpaperWiz/app/src/main/res/layout/row_wallpaper.xml" value="0.18984375" />
       </map>
     </option>
   </component>

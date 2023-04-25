@@ -1,6 +1,7 @@
 package com.example.wallpaperwiz.adapter
 
 import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -9,6 +10,8 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.wallpaperwiz.R
+import com.example.wallpaperwiz.activity.CategoriesActivity
+import com.example.wallpaperwiz.activity.FinalWallpaperActivity
 import com.example.wallpaperwiz.model.CategoriesModel
 
 class CategoriesAdapter(val context: Context,val list: ArrayList<CategoriesModel>):RecyclerView.Adapter<CategoriesAdapter.ViewHolder>() {
@@ -22,6 +25,12 @@ class CategoriesAdapter(val context: Context,val list: ArrayList<CategoriesModel
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.tv_categoriesName.text = list[position].name
         Glide.with(context).load(list[position].link).into(holder.iv_categoriesBg)
+        holder.itemView.setOnClickListener {
+            val i = Intent(context, CategoriesActivity::class.java)
+            i.putExtra("uid",list[position].id)
+            i.putExtra("name",list[position].name)
+            context.startActivity(i)
+        }
     }
 
     override fun getItemCount(): Int {
