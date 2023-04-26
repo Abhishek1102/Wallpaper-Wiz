@@ -4,6 +4,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="@color/white"
     tools:context=".fragment.DashboardFragment">
 
     <ScrollView
@@ -48,7 +51,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:overScrollMode="never"
-                android:layout_marginHorizontal="@dimen/_12sdp"
+                android:clipToPadding="false"
+                android:paddingHorizontal="@dimen/_6sdp"
                 android:scrollbars="none" />
 
             <com.example.wallpaperwiz.customfont.CustomTextViewSemiBold
