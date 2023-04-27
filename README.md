@@ -1,5 +1,5 @@
 # Wallpaper-Wiz
-A Wallpaper App designed for best user satisfaction for UI and simply just select the image you like and set it as your wallpaper by downloading it.
+A Wallpaper App designed for best user satisfaction for UI and simply just select the image you like and set it as your wallpaper or can download it.
 
 Wallpaper Wiz is a mobile application that allows users to browse and download a wide variety of high-quality wallpapers for their mobile devices. The app typically offers a vast collection of wallpapers in various categories including nature, abstract, animals, cars, fitness, and more.
 
