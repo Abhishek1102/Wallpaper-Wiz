@@ -19,4 +19,4 @@ Cloud Storage:- Firebase FireStore
 - Google Banner Ads and Interstitial Ads also provided.
 
 ### SCREENSHOTS:-
-<img src="https://user-images.githubusercontent.com/71425576/234833358-3126b423-72c1-4638-adef-4054f788663c.jpg">
+<img src="https://user-images.githubusercontent.com/71425576/234833358-3126b423-72c1-4638-adef-4054f788663c.jpg" width="250" height="500>
