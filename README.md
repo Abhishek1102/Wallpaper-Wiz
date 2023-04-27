@@ -5,6 +5,8 @@ Wallpaper Wiz is a mobile application that allows users to browse and download a
 
 Cloud Storage:- Firebase FireStore
 
+## Admin App for uploading or deleting images and categories.
+
 ## Features:-
 - It is connected with firebase
 - It uses firestore as a cloud database
