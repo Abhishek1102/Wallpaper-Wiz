@@ -11,10 +11,12 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.wallpaperwiz.R
 import com.example.wallpaperwiz.adapter.BomAdapter
 import com.example.wallpaperwiz.adapter.CategoriesAdapter
+import com.example.wallpaperwiz.adapter.PremiumAdapter
 import com.example.wallpaperwiz.adapter.TctAdapter
 import com.example.wallpaperwiz.databinding.FragmentDashboardBinding
 import com.example.wallpaperwiz.model.BomModel
 import com.example.wallpaperwiz.model.CategoriesModel
+import com.example.wallpaperwiz.model.PremiumModel
 import com.example.wallpaperwiz.model.TctModel
 import com.google.firebase.firestore.FirebaseFirestore
 
@@ -35,6 +37,7 @@ class DashboardFragment : Fragment() {
         bestOfTheMonth()
         theColorTone()
         categories()
+        premium()
 
         return binding.root
     }
@@ -80,6 +83,21 @@ class DashboardFragment : Fragment() {
             }
             binding.rvCategories.layoutManager = GridLayoutManager(context,2)
             binding.rvCategories.adapter = CategoriesAdapter(requireContext(),list_categories)
+        }
+    }
+
+    private fun premium() {
+        db.collection("premium").addSnapshotListener { value, error ->
+            val list_premium = arrayListOf<PremiumModel>()
+            val data = value!!.toObjects(PremiumModel::class.java)
+            list_premium.addAll(data)
+
+            for (i in list_premium)
+            {
+                Log.e("@","onCreateView: $i")
+            }
+            binding.rvPremium.layoutManager = GridLayoutManager(context,2)
+            binding.rvPremium.adapter = PremiumAdapter(requireContext(),list_premium)
         }
     }
 

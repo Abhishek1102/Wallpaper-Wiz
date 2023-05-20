@@ -3,10 +3,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:background="@color/white"
     android:clickable="true"
     android:focusable="true"
-    android:background="@color/white"
+    android:orientation="vertical"
     tools:context=".fragment.DashboardFragment">
 
     <ScrollView
@@ -24,9 +24,9 @@
                 style="@style/black_20"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_12sdp"
                 android:layout_marginTop="@dimen/_12sdp"
                 android:includeFontPadding="false"
-                android:layout_marginHorizontal="@dimen/_12sdp"
                 android:letterSpacing="0.04"
                 android:text="@string/app_name" />
 
@@ -40,18 +40,18 @@
                 style="@style/black_16"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_12sdp"
                 android:layout_marginVertical="@dimen/_8sdp"
                 android:includeFontPadding="false"
                 android:letterSpacing="0.02"
-                android:layout_marginHorizontal="@dimen/_12sdp"
                 android:text="@string/best_of_the_month" />
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rv_bom"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:overScrollMode="never"
                 android:clipToPadding="false"
+                android:overScrollMode="never"
                 android:paddingHorizontal="@dimen/_6sdp"
                 android:scrollbars="none" />
 
@@ -59,38 +59,72 @@
                 style="@style/black_16"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_12sdp"
                 android:layout_marginVertical="@dimen/_8sdp"
                 android:layout_marginTop="@dimen/_2sdp"
-                android:layout_marginHorizontal="@dimen/_12sdp"
-                android:letterSpacing="0.02"
                 android:includeFontPadding="false"
+                android:letterSpacing="0.02"
                 android:text="The Color Tones" />
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rv_tct"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:overScrollMode="never"
                 android:layout_marginHorizontal="@dimen/_12sdp"
+                android:overScrollMode="never"
                 android:scrollbars="none" />
 
             <com.example.wallpaperwiz.customfont.CustomTextViewSemiBold
                 style="@style/black_16"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_12sdp"
                 android:layout_marginVertical="@dimen/_8sdp"
                 android:layout_marginTop="@dimen/_2sdp"
-                android:letterSpacing="0.02"
-                android:layout_marginHorizontal="@dimen/_12sdp"
                 android:includeFontPadding="false"
+                android:letterSpacing="0.02"
                 android:text="Categories" />
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rv_categories"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:overScrollMode="never"
                 android:layout_marginEnd="@dimen/_12sdp"
+                android:overScrollMode="never"
+                android:scrollbars="none" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:gravity="center_vertical"
+                android:layout_marginHorizontal="@dimen/_12sdp"
+                android:layout_marginVertical="@dimen/_8sdp"
+                android:orientation="horizontal">
+
+                <com.example.wallpaperwiz.customfont.CustomTextViewSemiBold
+                    style="@style/black_16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:letterSpacing="0.02"
+                    android:text="Premium" />
+
+                <ImageView
+                    android:layout_width="@dimen/_23sdp"
+                    android:layout_height="@dimen/_23sdp"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginBottom="@dimen/_1sdp"
+                    android:src="@drawable/premium"/>
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_premium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:overScrollMode="never"
                 android:scrollbars="none" />
 
         </LinearLayout>

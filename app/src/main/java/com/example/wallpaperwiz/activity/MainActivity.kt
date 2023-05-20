@@ -9,6 +9,7 @@ import com.example.wallpaperwiz.databinding.ActivityMainBinding
 import com.example.wallpaperwiz.fragment.DashboardFragment
 import com.example.wallpaperwiz.fragment.DownloadsFragment
 import com.example.wallpaperwiz.helper.AppConstant
+import com.example.wallpaperwiz.helper.Utils
 
 class MainActivity : AppCompatActivity() {
 
@@ -19,6 +20,7 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        Utils.blackIconStatusBar(this, R.color.black)
         addfragment(DashboardFragment(),"DashboardFragment")
 
         initView()

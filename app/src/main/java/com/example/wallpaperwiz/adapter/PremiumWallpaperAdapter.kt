@@ -11,12 +11,14 @@ import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.wallpaperwiz.R
+import com.example.wallpaperwiz.activity.FInalPremiumWallpaperActivity
 import com.example.wallpaperwiz.activity.FinalWallpaperActivity
 import com.example.wallpaperwiz.model.BomModel
 import com.example.wallpaperwiz.model.CategoriesModel
+import com.example.wallpaperwiz.model.PremiumModel
 
-class WallpaperAdapter(val context: Context, val list: ArrayList<CategoriesModel>) :
-    RecyclerView.Adapter<WallpaperAdapter.ViewHolder>() {
+class PremiumWallpaperAdapter(val context: Context, val list: ArrayList<PremiumModel>) :
+    RecyclerView.Adapter<PremiumWallpaperAdapter.ViewHolder>() {
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -27,7 +29,7 @@ class WallpaperAdapter(val context: Context, val list: ArrayList<CategoriesModel
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         Glide.with(context).load(list[position].link).into(holder.iv_wallpaper)
         holder.itemView.setOnClickListener {
-            val i = Intent(context,FinalWallpaperActivity::class.java)
+            val i = Intent(context,FInalPremiumWallpaperActivity::class.java)
             i.putExtra("link",list[position].link)
             context.startActivity(i)
         }

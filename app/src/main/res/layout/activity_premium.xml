@@ -8,7 +8,7 @@
     tools:context=".activity.CategoriesActivity">
 
     <com.example.wallpaperwiz.customfont.CustomTextViewExtraBold
-        android:id="@+id/tv_categoriesName"
+        android:id="@+id/tv_premiumName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Category Name"

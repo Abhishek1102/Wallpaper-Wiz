@@ -21,6 +21,12 @@
         android:theme="@style/Theme.WallpaperWiz"
         tools:targetApi="31">
         <activity
+            android:name=".activity.FInalPremiumWallpaperActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.PremiumActivity"
+            android:exported="false" />
+        <activity
             android:name=".activity.CategoriesActivity"
             android:exported="false" />
         <activity
@@ -38,6 +44,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="com.razorpay.ApiKey"
+            android:value="rzp_test_ccOlk5rJvvrAvK" />
+        <meta-data
+            android:name="com.google.gms.wallet.api.enabled"
+            android:value="true" />
     </application>
 
 </manifest>
