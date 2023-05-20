@@ -13,6 +13,8 @@ Cloud Storage:- Firebase FireStore
 - User of perfect icons size and color for making app look perfect from every way
 - Better selection of design and color for app to look good
 - Have custom loader for loading process
+- Premium Wallpaper added
+- Razor pay added
 
 **Features for future time period :-**
 - Share wallpaper with others
