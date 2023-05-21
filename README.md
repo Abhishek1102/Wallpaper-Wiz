@@ -40,5 +40,5 @@ Cloud Storage:- Firebase FireStore
 <img src="https://github.com/Abhishek1102/Wallpaper-Wiz/assets/71425576/f998f94f-daa7-4ab7-a874-4875a10e92a3" width="250" height="500">
 </br>
 <img src="https://github.com/Abhishek1102/Wallpaper-Wiz/assets/71425576/a46e3ff9-8d44-4c67-baa0-da5a84e5b18f" width="250" height="500">
-
+</br>
 <img src="https://github.com/Abhishek1102/Wallpaper-Wiz/assets/71425576/eb7589d1-2d01-4c38-a16d-3aa13b38c876" width="250" height="500">
